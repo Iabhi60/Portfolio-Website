@@ -22,7 +22,7 @@ const Contact = () => {
     }
 
     emailjs
-      .sendForm('service_ar5y4yh', 'template_fs1qqin', form.current, 'esdxUYJJCp2MRuf9c')
+      .sendForm('service_3st3xmh', 'template_17h7jn8', form.current, 'KBrOlArYd8CTbSEbk')
       .then(() => {
         setShowAlert(true);
         setTimeout(() => {
