@@ -99,11 +99,19 @@ const Qualification = () => {
                     >
                         <div className="qualification__data">
                             <div>
-                                <h3 className="qualification__title">Programming with C and C++</h3>
-                                <span className="qualification__subtitle">Internshala</span>
+                                <h3 className="qualification__title">Programming with Java</h3>
+                                <span className="qualification__subtitle">Coding Ninjas</span>
                                 <div className="qualification__calendar">
-                                    <i className="uil uil-calendar-alt"></i> 9 Jan 2021
+                                    <i className="uil uil-calendar-alt"></i> 9 May 2024
                                 </div>
+                                <a 
+        href="https://drive.google.com/file/d/1gWlVCQKz2gairMTtl60syuZ5nasByACa/view?usp=sharing" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="qualification__certificate-link"
+    >
+        View Certificate
+    </a>
                             </div>
                             <div>
                                 <span className="qualification__rounder"></span>
@@ -118,21 +126,37 @@ const Qualification = () => {
                                 <span className="qualification__line"></span>
                             </div>
                             <div>
-                                <h3 className="qualification__title">SQL Certification</h3>
-                                <span className="qualification__subtitle">Simplilearn</span>
+                                <h3 className="qualification__title">Full Stack Web Development</h3>
+                                <span className="qualification__subtitle">Apna College</span>
                                 <div className="qualification__calendar">
-                                    <i className="uil uil-calendar-alt"></i> 9 Feb 2022
+                                    <i className="uil uil-calendar-alt"></i> 9 Feb 2024
                                 </div>
+                                <a 
+        href="https://drive.google.com/file/d/1YVJsVseKRLVZWqIOl_gNzleLq5wJfRJE/view?usp=sharing" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="qualification__certificate-link"
+    >
+        View Certificate
+    </a>
                             </div>
                         </div>
 
                         <div className="qualification__data">
                             <div>
-                                <h3 className="qualification__title">Student Learning Assessment</h3>
-                                <span className="qualification__subtitle">AICTE</span>
+                                <h3 className="qualification__title">Front-end Web Development</h3>
+                                <span className="qualification__subtitle">Coding Ninjas</span>
                                 <div className="qualification__calendar">
                                     <i className="uil uil-calendar-alt"></i> 21 Dec 2023
                                 </div>
+                                <a 
+        href="https://drive.google.com/file/d/1u99L0wfhMaK3WAxp6TgYzt9MPmWEvbyY/view?usp=sharing" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="qualification__certificate-link"
+    >
+        View Certificate
+    </a>
                             </div>
                             <div>
                                 <span className="qualification__rounder"></span>
