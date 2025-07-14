@@ -31,7 +31,7 @@ const Social = () => {
       </motion.a>
 
       <motion.a
-        href="https://github.com/Aviral60"
+        href="https://github.com/aviralkumar60"
         className="home_social-icon"
         target="_blank"
         whileHover={{ scale: 1.2 }}
