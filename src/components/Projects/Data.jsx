@@ -17,7 +17,7 @@ export const projectsData = [
     image: Project2,
     title: "Weather Application",
     category: "Web",
-    link: " https://aviral60.github.io/Weather-App/"
+    link: "  https://aviralkumar60.github.io/Weather-Application/"
   },
   {
     id: 3,
