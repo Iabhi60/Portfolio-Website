@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import { motion } from 'framer-motion'; // Import motion from framer-motion
+import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
 import './contact.css';
 
@@ -25,17 +25,12 @@ const Contact = () => {
       .sendForm('service_3st3xmh', 'template_17h7jn8', form.current, 'KBrOlArYd8CTbSEbk')
       .then(() => {
         setShowAlert(true);
-        setTimeout(() => {
-          setShowAlert(false);
-        }, 3000); // Hide alert after 3 seconds
-        setFormValues({ name: '', email: '', message: '' }); // Reset form values
+        setTimeout(() => setShowAlert(false), 3000);
+        setFormValues({ name: '', email: '', message: '' });
       })
-      .catch((error) => {
-        console.error('Failed to send email:', error);
+      .catch(() => {
         setErrorAlert(true);
-        setTimeout(() => {
-          setErrorAlert(false);
-        }, 3000); // Hide error alert after 3 seconds
+        setTimeout(() => setErrorAlert(false), 3000);
       });
   };
 
@@ -48,21 +43,30 @@ const Contact = () => {
     <motion.section 
       className="contact section" 
       id="contact" 
-      initial={{ opacity: 0, y: 20 }} // Initial state
-      animate={{ opacity: 1, y: 0 }} // Animate to final state
-      transition={{ duration: 0.5 }} // Duration of animation
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
     >
-      {showAlert && <div className="alert-message" role="alert">Message sent successfully!</div>}
-      {errorAlert && <div className="alert-message alert-error" role="alert">Failed to send message. Please try again.</div>}
       <h2 className="section__title">Get in Touch</h2>
       <span className="section__subtitle">Contact Me</span>
+
+      {showAlert && (
+        <div className="alert-message" role="alert">
+          Message sent successfully!
+        </div>
+      )}
+      {errorAlert && (
+        <div className="alert-message alert-error" role="alert">
+          Failed to send message. Please try again.
+        </div>
+      )}
 
       <div className="contact__container container grid">
         <motion.div
           className="contact__content"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }} // Slight delay for stagger effect
+          transition={{ duration: 0.5, delay: 0.2 }}
         >
           <h3 className="contact__title">Talk to me</h3>
 
@@ -72,8 +76,7 @@ const Contact = () => {
               <h3 className="contact__card-title">Email</h3>
               <span className="contact__card-data">kumaraviral60@gmail.com</span>
               <a href="mailto:kumaraviral022004@gmail.com" className="contact__button">
-                Write me
-                <i className="bx bx-right-arrow-alt contact__button-icon"></i>
+                Write me <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
             </div>
 
@@ -85,8 +88,7 @@ const Contact = () => {
                 href="https://api.whatsapp.com/send?phone=7880570474&text=Hello, more information!"
                 className="contact__button"
               >
-                Connect
-                <i className="bx bx-right-arrow-alt contact__button-icon"></i>
+                Connect <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
             </div>
 
@@ -98,8 +100,7 @@ const Contact = () => {
                 href="https://www.facebook.com/profile.php?id=61573581441563"
                 className="contact__button"
               >
-                Connect
-                <i className="bx bx-right-arrow-alt contact__button-icon"></i>
+                Connect <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
             </div>
           </div>
@@ -109,7 +110,7 @@ const Contact = () => {
           className="contact__content"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.4 }} // Slight delay for stagger effect
+          transition={{ duration: 0.5, delay: 0.4 }}
         >
           <h3 className="contact__title">Reach Out</h3>
 
