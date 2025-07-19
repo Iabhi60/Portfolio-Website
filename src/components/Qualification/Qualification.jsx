@@ -51,7 +51,7 @@ const Qualification = () => {
                                 <h3 className="qualification__title">Undergraduation</h3>
                                 <span className="qualification__subtitle">Abdul Kalam Technical University</span>
                                 <div className="qualification__calendar">
-                                    <i className="uil uil-calendar-alt"></i> 2021-Present
+                                    <i className="uil uil-calendar-alt"></i> 2021-2025
                                 </div>
                             </div>
                             <div>

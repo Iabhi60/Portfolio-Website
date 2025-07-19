@@ -111,13 +111,13 @@
   resize: none;
 }
 
-/* Alert Message */
+/* Alert Message (inline) */
 .alert-message {
-  margin: 1rem 0;
+  margin: 1rem auto;
   padding: 10px 20px;
   border-radius: 6px;
   font-size: 14px;
-  max-width: 100%;
+  max-width: 500px;
   text-align: center;
   font-weight: 500;
   background-color: #d4edda;
@@ -132,7 +132,7 @@
   border: 1px solid #f5c6cb;
 }
 
-/* Responsive */
+/* Responsive Breakpoints */
 @media screen and (max-width: 992px) {
   .contact__container {
     column-gap: 3rem;
