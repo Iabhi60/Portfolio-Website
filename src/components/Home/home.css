@@ -67,7 +67,7 @@
     order: 1;
     justify-self: center;
     width: 450px;
-    height: 570px;
+    height: 600px;
     animation: profile__animate 8s ease-in-out infinite 1s;
 }
 @keyframes profile__animate {
